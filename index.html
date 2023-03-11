@@ -107,24 +107,7 @@
 
           </li>
 
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address><p>Kondiyara House</p>
-                       PO Panangad
-                        Thrissur,Kerala
-              </address>
-            </div>
-
-          </li>
-
-        </ul>
+                  </ul>
 
         <div class="separator"></div>
 
@@ -795,64 +778,49 @@
 
         <section class="contact-form">
 
-            <h3 class="h3 form-title">Contact Form</h3>
-  
-            <form onsubmit="sendEmail(); reset(); return false;">
-  
-              <div class="input-wrapper">
-                <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-  
-                <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-              </div>
-  
-              <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-  
-              <button class="form-btn" type="submit">
-                <ion-icon name="paper-plane"></ion-icon>
-                <span>Send Message</span>
-              </button>
-  
-            </form>
-  
-          </section>
-  
-        </article>
-  
-      </div>
-  
-    </main>
-  
-  
-  
-  
-  
-  
-    <!--
-      - custom js link
-    -->
-    <script src="./assets/js/script.js"></script>
-  
-    <!--
-      - ionicon link
-    -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script>
-    function sendEmail(){
-      Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "workmy000@gmail.com",
-    Password : "E76D9DFBA936C46457F566861C4A07E35C0A@123",
-    To : "benjoybj891@gmail.com",
-    From : "workmy000@gmail.com",
-    Subject : "This is the subject",
-    Body : "body"
-}).then(
-  message => alert(message)
-);
-    }
-  </script>
-  </body>
-  
-  </html>
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="https://formsubmit.co/akshayachukondiyara@gmail.com" method="post" class="contact-form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
